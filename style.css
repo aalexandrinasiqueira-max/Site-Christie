@@ -94,7 +94,16 @@ body {
     border-radius: 8px;
     border-left: 5px solid #070001;
     border-right: 5px solid #070001;
+    font-family: 'Special Elite', monospace;
+}
+
+.pLivrosChristie {
+    margin-bottom: 2px;
+    padding: 4px;
+    background-color:  #eedcce;
+    border-radius: 6px;
     font-family: Times New Roman, serif;
+    font-size: 16px;
 }
 
 .liLivrosChristie {
@@ -359,4 +368,87 @@ form .btn-primary {
     margin: 0 auto;
     padding: 20px;
     flex: 1;
+}
+
+/* Menu lateral e abas */
+/* Menu de abas (dropdown) */
+.menu-abas {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.botao-menu {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #7a3840;
+    color: #f5b444;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao-menu:hover {
+    background-color: #f5b444;
+    color: #7a3840;
+}
+
+.menu-lateral {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    z-index: 5;
+    width: 250px;
+    flex-direction: column;
+    padding: 8px;
+    background-color: #eedcce;
+    border-radius: 8px;
+    border-left: 5px solid #7a3840;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.menu-lateral.aberto {
+    display: flex;             /* aparece ao clicar */
+}
+
+.menu-lateral button {
+    padding: 12px 14px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #7a3840;
+    font-family: 'Special Elite', monospace;
+    font-size: 15px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-lateral button:hover,
+.menu-lateral button.ativo {
+    background-color: #7a3840;
+    color: #f5b444;
+}
+
+.aba {
+    display: none;
+}
+
+.aba.ativa {
+    display: block;
+}
+
+@media (max-width: 500px) {
+    nav {
+        padding-left: 56px;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+    }
 }

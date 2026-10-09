@@ -19,111 +19,122 @@
     </header>
 
     <nav>
+        <div class="menu-abas">
+            <button type="button" id="botaoMenu" class="botao-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+            <aside class="menu-lateral" id="menuLateral">
+                <button type="button" class="ativo" data-aba="sobre">Quem foi Agatha Christie</button>
+                <button type="button" data-aba="curiosidades">Curiosidades</button>
+                <button type="button" data-aba="livros">Principais livros</button>
+            </aside>
+        </div>
         <ul>
             <li><a href="index.html">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#curiosidades">Curiosidades</a></li>
-            <li><a href="#livros">Livros</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="#" id="sair">Sair</a></li>
         </ul>
     </nav>
 
     <main class="main">
-        <section class="sobreChristie" id="sobre">
-            <h2>Quem foi Agatha Christie, a Rainha?</h2>
-            <p class="pSobreChristie">Agatha Christie foi uma escritora britânica, nascida em 15 de setembro de 1890, em Torquay, Reino Unido.
-               Ela começou a escrever seus primeiros poemas e contos na adolescência, por volta dos 18 anos e, ela a escreveu seus 
-               primeiros poemas e contos na adolescência, em 1908. Aos 19 anos, escreveu seu primeiro romance 
-               (que foi rejeitado pelas editoras), mas foi aos 26 anos, em 1916, que ela criou O Misterioso Caso de Styles, sua 
-               primeira obra publicada que apresentou ao mundo o detetive Hercule Poirot. E, ela morreu de causas naturais em 12 de janeiro 
-               de 1976, aos 85 anos, em sua residência na Inglaterra. Sua saúde já estava fragilizada pela idade avançada e ela 
-               faleceu pacificamente após contrair uma pneumonia, sem nenhum mistério ou crime envolvido.               
-            </p>
-            
-            <figure>
-                <img class="agatha-image" src="agatha-christie.jpg" alt="Agatha Christie" title="Agatha Christie">
-                <figcaption>Foto de Agatha Christie</figcaption>
-            </figure>
-        </section>
 
-        <section class="curiosidadesChristie" id="curiosidades">
-            <h2>Curiosidades sobre a Rainha do Crime</h2>
-            <p class="pCuriosidadesChristie">→ Quer conhecer mais sobre a vida e as obras de Agatha Christie? 
-                Aqui estão algumas curiosidades interessantes:</p>
-            <ul class="ulCuriosidadesChristie">
-                <li>
-                    <strong>Nome verdadeiro:</strong> 
-                    O seu nome verdadeiro é Agatha Mary Clarissa Miller. Agatha Christie sendo seu nome
-                    artístico.
-                </li>
-                <br>
-                <li>
-                    <strong>Especialista em veneno:</strong> 
-                    Ela tinha um grande conhecimento sobre venenos, pois trabalhou como enfermeira
-                    durante a Primeira Guerra Mundial, o que a ajudou a criar enredos complexos 
-                    e realistas em seus romances de mistério.
-                </li>
-                <br>
-                <li>
-                    <strong>Recorde de vendas:</strong> 
-                    Agatha Christie é uma das autoras mais vendidas de todos os tempos, com mais de 2 bilhões 
-                    de cópias de seus livros vendidos em todo o mundo.
-                </li>
-                <br>
-                <li>
-                    <strong>Personagens icônicos:</strong> 
-                    Ela criou personagens icônicos como Hercule Poirot e Miss Marple, que se tornaram figuras 
-                    lendárias no gênero de mistério.
-                </li>
-                <br>
-                <li>
-                    <strong>Desaparecimento:</strong> 
-                    Em dezembro de 1926, Agatha Christie desapareceu por 11 dias na Inglaterra após traição do marido e 
-                    luto pela mãe. Ela foi achada em um hotel sob nome falso e alegou amnésia, 
-                    gerando teorias de surto ou vingança.
-                </li>
-            </ul>
-        </section>
+        <div class="conteudo">
+            <section class="sobreChristie aba ativa" id="sobre">
+                <h2>Quem foi Agatha Christie, a Rainha?</h2>
+                <p class="pSobreChristie">
+                    Agatha Christie foi uma escritora britânica, nascida em 15 de setembro de 1890, em Torquay, 
+                    Reino Unido. Ela começou a escrever seus primeiros poemas e contos na adolescência, por volta dos 18 anos e, ela 
+                    escreveu seus primeiros poemas e contos na adolescência, em 1908. Aos 19 anos, escreveu seu primeiro romance 
+                    (que foi rejeitado pelas editoras), mas foi aos 26 anos, em 1916, que ela criou O Misterioso Caso de Styles, sua 
+                    primeira obra publicada que apresentou ao mundo o detetive Hercule Poirot. E, ela morreu de causas naturais em 12 
+                    de janeiro de 1976, aos 85 anos, em sua residência na Inglaterra. Sua saúde já estava fragilizada pela idade 
+                    avançada e ela faleceu pacificamente após contrair uma pneumonia, sem nenhum mistério ou crime envolvido.               
+                </p>
+                
+                <figure>
+                    <img class="agatha-image" src="agatha-christie.jpg" alt="Agatha Christie" title="Agatha Christie">
+                    <figcaption>Foto de Agatha Christie</figcaption>
+                </figure>
+            </section>
 
-        <section class="livrosChristie" id="livros">
-            <h2>Principais livros de Agatha Christie</h2>
-            <p>→ Agatha Christie escreveu mais de 70 romances e contos, muitos dos quais se tornaram clássicos do gênero de mistério. 
-               Alguns de seus livros mais famosos incluem:</p>
-            <ul  class="liLivrosChristie">
-                <li>
-                    <strong>"O Assassinato de Roger Ackroyd" (1926):</strong>
-                    Obra aclamada que revolucionou o gênero policial devido ao seu narrador e à 
-                    grande reviravolta no desfecho.
-                </li>
-                <br>
-                <li>
-                    <strong>"Assassinato no Expresso do Oriente" (1934):</strong>
-                     O detetive Hercule Poirot precisa solucionar o assassinato de um passageiro americano em um 
-                     luxuoso trem preso pela neve.
-                </li>
-                <br>
-                <li>
-                    <strong>"Morte no Nilo" (1937):</strong>
-                     Poirot investiga um crime passional a bordo de um navio a vapor durante um cruzeiro pelo rio Nilo.
-                </li>
-                <br>
-                <li>
-                    <strong>"E Não Sobrou Nenhum" (1939):</strong>
-                     Dez pessoas sem ligação aparente são convidadas para uma ilha isolada e começam a morrer uma a uma, 
-                     sem a presença de um detetive tradicional. É um dos livros mais vendidos do mundo.
-                </li>
-                <br>
-                <li>
-                    <strong>"Os Crimes ABC" (1936):</strong>
-                      Um assassino em série desafia Poirot deixando um exemplar do guia ferroviário ABC 
-                      ao lado dos corpos em ordem alfabética.
-                </li>
-            </ul>
-        </section>
+            <section class="curiosidadesChristie aba" id="curiosidades">
+                <h2>Curiosidades sobre a Rainha do Crime</h2>
+                <p class="pCuriosidadesChristie">→ Quer conhecer mais sobre a vida e as obras de Agatha Christie? 
+                    Aqui estão algumas curiosidades interessantes:</p>
+                <ul class="ulCuriosidadesChristie">
+                    <li>
+                        <strong>Nome verdadeiro:</strong> 
+                        O seu nome verdadeiro é Agatha Mary Clarissa Miller. Agatha Christie sendo seu nome
+                        artístico.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Especialista em veneno:</strong> 
+                        Ela tinha um grande conhecimento sobre venenos, pois trabalhou como enfermeira
+                        durante a Primeira Guerra Mundial, o que a ajudou a criar enredos complexos 
+                        e realistas em seus romances de mistério.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Recorde de vendas:</strong> 
+                        Agatha Christie é uma das autoras mais vendidas de todos os tempos, com mais de 2 bilhões 
+                        de cópias de seus livros vendidos em todo o mundo.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Personagens icônicos:</strong> 
+                        Ela criou personagens icônicos como Hercule Poirot e Miss Marple, que se tornaram figuras 
+                        lendárias no gênero de mistério.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Desaparecimento:</strong> 
+                        Em dezembro de 1926, Agatha Christie desapareceu por 11 dias na Inglaterra após traição do marido e 
+                        luto pela mãe. Ela foi achada em um hotel sob nome falso e alegou amnésia, 
+                        gerando teorias de surto ou vingança.
+                    </li>
+                </ul>
+            </section>
+
+            <section class="livrosChristie aba" id="livros">
+                <h2>Principais livros de Agatha Christie</h2>
+                <p class="pLivrosChristie">→ Agatha Christie escreveu mais de 70 romances e contos, muitos dos quais se tornaram clássicos do gênero de mistério. 
+                Alguns de seus livros mais famosos incluem:</p>
+                <ul  class="liLivrosChristie">
+                    <li>
+                        <strong>"O Assassinato de Roger Ackroyd" (1926):</strong>
+                        Obra aclamada que revolucionou o gênero policial devido ao seu narrador e à 
+                        grande reviravolta no desfecho.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>"Assassinato no Expresso do Oriente" (1934):</strong>
+                        O detetive Hercule Poirot precisa solucionar o assassinato de um passageiro americano em um 
+                        luxuoso trem preso pela neve.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>"Morte no Nilo" (1937):</strong>
+                        Poirot investiga um crime passional a bordo de um navio a vapor durante um cruzeiro pelo rio Nilo.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>"E Não Sobrou Nenhum" (1939):</strong>
+                        Dez pessoas sem ligação aparente são convidadas para uma ilha isolada e começam a morrer uma a uma, 
+                        sem a presença de um detetive tradicional. É um dos livros mais vendidos do mundo.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>"Os Crimes ABC" (1936):</strong>
+                        Um assassino em série desafia Poirot deixando um exemplar do guia ferroviário ABC 
+                        ao lado dos corpos em ordem alfabética.
+                    </li>
+                </ul>
+            </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Um cantinho para Agatha Christie e seus fãs, feita por Ana Carolina. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js" data-protegida></script>
 </body>
 </html>
