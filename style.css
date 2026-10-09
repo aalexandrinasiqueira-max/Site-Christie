@@ -1,0 +1,362 @@
+/*  
+    style.css
+    Estilos para a página agatha.html
+*/
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #faf2e6;
+}
+
+.header {
+    background-color: #7a3840;
+    padding: 20px;
+    text-align: center;
+    font-family:cursive;
+}
+
+.subtitle {
+    font-family: 'Special Elite', monospace;
+    font-size: 20px;
+    color: #f5b444;
+    margin-top: 10px;
+}
+
+.fonte-barrio {
+  font-family: "Barrio", system-ui;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
+.sobreChristie {
+    margin-bottom: 20px;
+    padding: 12px 24px;
+    background-color: #eedcce;
+    border-radius: 8px;
+    border-left: 5px solid #7a3840;
+    border-right: 5px solid #7a3840;
+    font-family: 'Special Elite', monospace;
+}
+
+.pSobreChristie {
+    margin-bottom: 2px;
+    padding: 4px;
+    background-color: #eedcce;
+    border-radius: 6px;
+    border-left: 5px solid #b09249;
+    font-family: Times New Roman, serif;
+    font-size: 16px;
+}
+
+.curiosidadesChristie {
+    margin-bottom: 20px;
+    padding: 12px 24px;
+    background-color:  #eedcce;
+    border-radius: 8px;
+    border-left: 5px solid #070001;
+    border-right: 5px solid #070001;
+    font-family: 'Special Elite', monospace;
+}
+
+.pCuriosidadesChristie {
+    margin-bottom: 2px;
+    padding: 4px;
+    background-color:  #eedcce;
+    border-radius: 6px;
+    font-family: Times New Roman, serif;
+    font-size: 16px;
+}
+
+.ulCuriosidadesChristie {
+    margin-bottom: 2px;
+    padding: 4px;
+    background-color:  #eedcce;
+    border-radius: 6px;
+    font-family: Times New Roman, serif;
+    font-size: 16px;
+}
+
+.livrosChristie {
+    margin-bottom: 20px;
+    padding: 12px 24px;
+    background-color:  #eedcce;
+    border-radius: 8px;
+    border-left: 5px solid #070001;
+    border-right: 5px solid #070001;
+    font-family: Times New Roman, serif;
+}
+
+.liLivrosChristie {
+    margin-bottom: 2px;
+    padding: 4px;
+    background-color:  #eedcce;
+    border-radius: 6px;
+    font-family: Times New Roman, serif;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li::before {
+    content: "◆ ";
+    color: #b09249;
+}
+
+.agatha-image {
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+    border: 2px solid #b4513d;
+    width: 250px;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-top: 6px;
+}
+
+footer {
+    background-color: #7a3840;
+    color: #f5b444;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Special Elite', monospace;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #eedcce;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li::before {
+    content: none;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 14px 24px;
+    font-family: 'Special Elite', monospace;
+    color: #7a3840;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #7a3840;
+    color: #f5b444;
+}
+
+nav a.ativo {
+    background-color: #7a3840;
+    color: #f5b444;
+}
+
+section {
+    scroll-margin-top: 60px;
+}
+
+/*  
+    style.css
+    Estilos para a página index.html
+*/
+.site {
+    margin-bottom: 20px;
+    padding: 12px 24px;
+    background-color:  #eedcce;
+    border-radius: 8px;
+    border-left: 5px solid #070001;
+    border-right: 5px solid #070001;
+    font-family: 'Special Elite', monospace;
+}
+
+.pSite {
+    margin-bottom: 2px;
+    padding: 4px;
+    background-color:  #eedcce;
+    border-radius: 6px;
+    font-family: Times New Roman, serif;
+    font-size: 16px;
+}
+
+.beneficios {
+    margin-bottom: 20px;
+    padding: 12px 24px;
+    background-color:  #eedcce;
+    border-radius: 8px;
+    border-left: 5px solid #070001;
+    border-right: 5px solid #070001;
+    font-family: 'Special Elite', monospace;
+}
+
+.ulBeneficios {
+    margin-bottom: 2px;
+    padding: 4px;
+    background-color:  #eedcce;
+    border-radius: 6px;
+    font-family: Times New Roman, serif;
+    font-size: 16px;
+}
+
+.infoSite {
+    margin-bottom: 20px;
+    padding: 12px 24px;
+    background-color:  #eedcce;
+    border-radius: 8px;
+    border-left: 5px solid #070001;
+    border-right: 5px solid #070001;
+    font-family: 'Special Elite', monospace;
+}
+
+.pInfoSite {
+    margin-bottom: 2px;
+    padding: 4px;
+    background-color:  #eedcce;
+    border-radius: 6px;
+    font-family: Times New Roman, serif;
+    font-size: 16px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7a3840;
+    color: #f5b444;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #f5b444;
+    color: #7a3840;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f5b444;
+    color: #7a3840;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #7a3840;
+    color: #f5b444;
+}
+
+/* Páginas de login e cadastro */
+.form-box {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 12px 24px 24px;
+    background-color: #eedcce;
+    border-radius: 8px;
+    border-left: 5px solid #7a3840;
+    border-right: 5px solid #7a3840;
+    font-family: 'Special Elite', monospace;
+}
+
+.form-box h2 {
+    color: #7a3840;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 14px;
+    margin-bottom: 4px;
+    color: #7a3840;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #b4513d;
+    border-radius: 4px;
+    background-color: #faf2e6;
+    font-family: Times New Roman, serif;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #7a3840;
+    box-shadow: 0 0 0 3px rgba(245, 180, 68, 0.5);
+}
+
+form .btn-primary {
+    margin-top: 24px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Special Elite', monospace;
+    font-size: 16px;
+}
+
+.form-link {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.form-link a {
+    color: #7a3840;
+}
+
+.main {
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
