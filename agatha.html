@@ -1,3 +1,4 @@
+<!--agatha.html-->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -20,7 +21,10 @@
 
     <nav>
         <div class="menu-abas">
-            <button type="button" id="botaoMenu" class="botao-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+            <button type="button" id="botaoMenu" class="botao-menu" aria-expanded="false" aria-controls="menuLateral">
+                <span class="botao-texto">Explorar</span>
+                <span class="seta">▾</span>
+            </button>
 
             <aside class="menu-lateral" id="menuLateral">
                 <button type="button" class="ativo" data-aba="sobre">Quem foi Agatha Christie</button>
@@ -35,7 +39,6 @@
     </nav>
 
     <main class="main">
-
         <div class="conteudo">
             <section class="sobreChristie aba ativa" id="sobre">
                 <h2>Quem foi Agatha Christie, a Rainha do Crime?</h2>
@@ -93,12 +96,11 @@
                     </li>
                 </ul>
             </section>
-
             <section class="livrosChristie aba" id="livros">
                 <h2>Principais livros de Agatha Christie</h2>
                 <p class="pLivrosChristie">→ Agatha Christie escreveu mais de 70 romances e contos, muitos dos quais se tornaram clássicos do gênero de mistério. 
                 Alguns de seus livros mais famosos incluem:</p>
-                <ul  class="liLivrosChristie">
+                <ul class="liLivrosChristie">
                     <li>
                         <strong>"O Assassinato de Roger Ackroyd" (1926):</strong>
                         Obra aclamada que revolucionou o gênero policial devido ao seu narrador e à 
@@ -128,7 +130,12 @@
                         ao lado dos corpos em ordem alfabética.
                     </li>
                 </ul>
+
+                <div class="ver-mais">
+                    <a href="christieLivros.html" class="btn-primary">Ver mais obras →</a>
+                </div>
             </section>
+        </div>
     </main>
 
     <footer>

@@ -85,30 +85,38 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = "index.html";
         });
     }
-});
 
     /* ABAS DA BIOGRAFIA */
     const botaoMenu = document.getElementById("botaoMenu");
     const menuLateral = document.getElementById("menuLateral");
-    const botoesAba = document.querySelectorAll(".menu-lateral button");
-    const abas = document.querySelectorAll(".aba");
-
-    function abrirFecharMenu(abrir) {
-        menuLateral.classList.toggle("aberto", abrir);
-        botaoMenu.setAttribute("aria-expanded", abrir);
-    }
-
-    function mostrarAba(id) {
-        abas.forEach(function (aba) {
-            aba.classList.toggle("ativa", aba.id === id);
-        });
-        botoesAba.forEach(function (botao) {
-            botao.classList.toggle("ativo", botao.dataset.aba === id);
-        });
-        abrirFecharMenu(false);   // fecha o menu depois de escolher
-    }
 
     if (botaoMenu && menuLateral) {
+        const botaoTexto = botaoMenu.querySelector(".botao-texto");
+        const botoesAba = document.querySelectorAll(".menu-lateral button");
+        const abas = document.querySelectorAll(".aba");
+
+        function abrirFecharMenu(abrir) {
+            menuLateral.classList.toggle("aberto", abrir);
+            botaoMenu.setAttribute("aria-expanded", abrir);
+        }
+
+        function mostrarAba(id) {
+            abas.forEach(function (aba) {
+                aba.classList.toggle("ativa", aba.id === id);
+            });
+
+            botoesAba.forEach(function (botao) {
+                const ehAtual = botao.dataset.aba === id;
+                botao.classList.toggle("ativo", ehAtual);
+
+                if (ehAtual && botaoTexto) {
+                    botaoTexto.textContent = botao.textContent;   // mostra o nome da aba atual no botão
+                }
+            });
+
+            abrirFecharMenu(false);   // fecha o menu depois de escolher
+        }
+
         botaoMenu.addEventListener("click", function (event) {
             event.stopPropagation();
             abrirFecharMenu(!menuLateral.classList.contains("aberto"));
@@ -134,3 +142,4 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+});

@@ -277,6 +277,31 @@ section {
     font-size: 16px;
 }
 
+.siteFrase {
+    margin-bottom: 10px;
+    padding: 8px 24px;
+    background-color: #0e0600;
+    border-radius: 8px;
+    border-left: 5px solid #7a3840;
+    border-right: 5px solid #7a3840;
+    font-family: 'Special Elite', monospace;
+}
+
+.siteP {
+    margin: 4px;
+    font-family: 'Special Elite', monospace;
+    font-size: 18px;
+    color: #f5b444;
+    text-align: center;
+}
+
+.btn-logCad {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
 .btn-primary {
     display: inline-block;
     padding: 10px 20px;
@@ -386,12 +411,16 @@ form .btn-primary {
 }
 
 .botao-menu {
-    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
     border: none;
     border-radius: 6px;
     background-color: #7a3840;
     color: #f5b444;
-    font-size: 20px;
+    font-family: 'Special Elite', monospace;   /* botões não herdam a fonte da página */
+    font-size: 15px;
     line-height: 1;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
@@ -400,6 +429,14 @@ form .btn-primary {
 .botao-menu:hover {
     background-color: #f5b444;
     color: #7a3840;
+}
+
+.seta {
+    transition: transform 0.3s;
+}
+
+.botao-menu[aria-expanded="true"] .seta {
+    transform: rotate(180deg);   /* a seta vira para cima quando o menu está aberto */
 }
 
 .menu-lateral {
@@ -449,12 +486,102 @@ form .btn-primary {
     display: block;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     nav {
-        padding-left: 56px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 0 0;
+    }
+
+    .menu-abas {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
     }
 
     nav ul {
-        justify-content: flex-start;
+        justify-content: center;
     }
+}
+
+/* Página de livros */
+.livrosPagina {
+    padding: 12px 24px 24px;
+    background-color: #eedcce;
+    border-radius: 8px;
+    border-left: 5px solid #070001;
+    border-right: 5px solid #070001;
+    font-family: 'Special Elite', monospace;
+}
+
+.pLivros {
+    font-family: Times New Roman, serif;
+    font-size: 16px;
+}
+
+.grade-livros {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.cartao-livro {
+    padding: 14px 16px;
+    background-color: #faf2e6;
+    border: 2px solid #b4513d;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cartao-livro:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cartao-livro h3 {
+    margin: 0 0 8px;
+    color: #7a3840;
+    font-size: 18px;
+}
+
+.cartao-livro p {
+    margin: 10px 0 0;
+    font-family: Times New Roman, serif;
+    font-size: 16px;
+}
+
+.ano,
+.detetive {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+}
+
+.ano {
+    background-color: #7a3840;
+    color: #f5b444;
+}
+
+.detetive {
+    background-color: #f5b444;
+    color: #7a3840;
+}
+
+img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+    border: 2px solid #b4513d;
+    width: 250px;
+}
+
+.ver-mais {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
 }
