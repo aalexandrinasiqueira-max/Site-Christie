@@ -233,23 +233,10 @@ section {
     font-size: 16px;
 }
 
-.beneficios {
-    margin-bottom: 20px;
-    padding: 12px 24px;
-    background-color:  #eedcce;
-    border-radius: 8px;
-    border-left: 5px solid #070001;
-    border-right: 5px solid #070001;
+.strongSite {
     font-family: 'Special Elite', monospace;
-}
-
-.ulBeneficios {
-    margin-bottom: 2px;
-    padding: 4px;
-    background-color:  #eedcce;
-    border-radius: 6px;
-    font-family: Times New Roman, serif;
-    font-size: 16px;
+    font-size: 18px;
+    color: #7a3840;
 }
 
 .infoSite {
@@ -263,6 +250,25 @@ section {
 }
 
 .pInfoSite {
+    margin-bottom: 2px;
+    padding: 4px;
+    background-color:  #eedcce;
+    border-radius: 6px;
+    font-family: Times New Roman, serif;
+    font-size: 16px;
+}
+
+.beneficios {
+    margin-bottom: 20px;
+    padding: 12px 24px;
+    background-color:  #eedcce;
+    border-radius: 8px;
+    border-left: 5px solid #070001;
+    border-right: 5px solid #070001;
+    font-family: 'Special Elite', monospace;
+}
+
+.ulBeneficios {
     margin-bottom: 2px;
     padding: 4px;
     background-color:  #eedcce;
